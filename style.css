@@ -83,6 +83,7 @@ main{
 .detalhes{
     color:#D97706;
     font-family: Epilogue;
+    font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
 }
@@ -117,114 +118,83 @@ hr{
     border-radius: 0.5rem;
 }
 
-.button-container{
+.card-container-1{
     max-width: 1120px;
-    width: 100%;
-    
-    margin: auto;
-    transform: translate("0, -50%");
-}
-
-button{
-    border: none;
-    border-radius: 0.5;
-    color: #F59E0B;
-}
-
-/*.atualizar{
-    display: flex;
-    background: #1F2937;
     padding: 3rem 2rem;
-    max-width: 1120px;
     margin: auto;
-
-}
-*/
-
-.test{
+    flex-direction: column;
     display: flex;
-    background: #1F2937;
-    padding: 3rem 2rem;
-    max-width: 1120px;
-    margin: auto;
-}
 
-.hero-subconteudo{
+} 
+.card-cabecalho{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
 
-.hero-subtitulo-atualizar{
+}
+.card-titulo{
+    color: #374151;
     font-family: Montserrat;
     font-size: 2rem;
     font-weight: 700;
-    
-    color:#374151;
 }
-
-.hero-subtitulo-p{
-    color: #6B7280;
+.card-subtitulo{
+    color:#6B7280;
     font-family: Inter;
     font-size: 1rem;
     font-weight: 400;
 }
-
-/* Aqui fica todos os cards */
-.hero-card-container{
+.card-container-bloco{
+    padding: 0rem 10rem;
     display: flex;
+
     flex-wrap: wrap;
-    justify-content: center;
-    background: #6B7280;
-    padding: 1rem 10rem;
     gap: 2rem;
-} 
-
-/* Aqui e o card separado */
-.hero-card, .hero-card2, .hero-card3, .hero-card4{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    background: #FFF;
-    border-radius: 0.8rem;
-    padding: 1rem;
-    gap: 1rem;
-    width: 560px;
-    /*flex-basis: 10rem; */
 }
+.card-container-2{
+    border-radius: 0.5rem;
+    background: #424040; 
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+    flex-basis: 29rem;
 
-.hero-card-detalhes{
+}
+.card-cabecalho-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+.card-cabecalho-detalhes{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
-
-.hero-card-title{
+.card-titulo-1{
     color: #374151;
     font-family: Montserrat;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 700; 
 }
-
-.hero-subtitulo-card{
-    color: #6B7280;
+.card-descricao{
+    color:#6B7280;
     font-family: Inter;
     font-size: 1rem;
-} 
-
+    font-weight: 400;
+}
 .card-autor{
     display: flex;
-    gap: 0.5;
+    flex-direction: row;
     align-items: center;
+    gap: 0.5rem;
 }
-
-.card-autor > img{
+.card-autor >img {
     border-radius: 20rem;
     width: 1.5rem;
 }
-
-.card-auto-name{
+.card-autor-nome{
     color: #6B7280;
     font-family: Inter;
     font-size: 16px;
