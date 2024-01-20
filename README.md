@@ -23,7 +23,7 @@ Abra o navegador e acesse ([http://localhost:3000](https://tkryann.github.io/lan
 
 ## Contribuidores
 
-- Kherlysson Ryann ([GitHub]([https://github.com/seu-usuario](https://tkryann.github.io/landing-page/)))
-- Daniel Aroucha ([GitHub]([https://github.com/seu-usuario](https://github.com/NeroSzS)))
+- Kherlysson Ryann ([GitHub]([https://github.com/seu-usuario](https://tkryann.github.io/landing-page/))
+- Daniel Aroucha ([GitHub]([https://github.com/seu-usuario](https://github.com/NeroSzS))
 
 Agradecemos por fazer parte do CodeGeek e esperamos que desfrute da comunidade!
