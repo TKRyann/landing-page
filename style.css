@@ -20,7 +20,7 @@ nav{
     width: 1120px;
     margin: auto;
     padding: 1.5rem 10rem;
-
+    
     display:flex;
     align-items: center;
     flex-direction: row;
@@ -29,7 +29,7 @@ nav{
 } 
 .logo{
     font-family: teko;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 2rem;
     align-items: center;
     text-transform: uppercase;
@@ -38,13 +38,12 @@ nav{
 
 .menu{
     display: flex;
-    flex-direction: row;
     gap: 1.5rem;
     font-family: Inter;
     color: #6B7280;
     font-size: 16px;
     font-weight: 500;
-    line-height: normal;
+    cursor: pointer;
 } 
 .github {
     font-size: 16px;
@@ -66,6 +65,7 @@ main{
     display: flex;
     gap: 6rem;
     justify-content: space-between; 
+    align-items: center;
     padding: 0rem 2rem;
     margin: auto;
     overflow: clip;
@@ -81,14 +81,12 @@ main{
     color:#D97706;
     font-family: Epilogue;
     font-size: 1rem;
-    font-style: normal;
     text-transform: uppercase;
 
 }
 h1{
     font-family: Montserrat;
     font-size: 2.3rem;
-    font-style: normal;
     font-weight: 800;
     color: #1F2937 ;  
 }
@@ -99,7 +97,6 @@ hr{
     font-family: Inter;
     color: #64748B;
     font-size: 1rem;
-    font-style: normal;
     font-weight: 400;
 }
 .hero-image-conteiner{
@@ -111,7 +108,103 @@ hr{
 .hero-image-conteiner > figure > img{
     width: 100%;
     border-radius: 0.5rem;
+} 
+.button-container{
+    max-width: 1120px;
+    width: 100%;
+    
+    margin: auto;
+    transform: translate("0, -50%");
+}
+button{
+    border: none;
+    border-radius: 0.5;
+    color: #F59E0B;
 
 }
+/*.atualizar{
+    display: flex;
+    background: #1F2937;
+    padding: 3rem 2rem;
+    max-width: 1120px;
+    margin: auto;
 
+}
+*/
+.test{
+    display: flex;
+    background: #1F2937;
+    padding: 3rem 2rem;
+    max-width: 1120px;
+    margin: auto;
+}
+.hero-subconteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.hero-subtitulo-atualizar{
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    
+    color:#374151;
+} 
+.hero-subtitulo-p{
+    color: #6B7280;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.hero-card-container{
+    background: #6B7280;
+    display: flex;
+    padding: 0rem 10rem;
+    gap: 2rem;
 
+} 
+
+.hero-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    gap: 2rem;
+    /*flex-basis: 10rem; */
+
+}
+.hero-card-detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.hero-card-title{
+    color: #374151;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.hero-subtitulo-card{
+    color: #6B7280;
+    font-family: Inter;
+    font-size: 1rem;
+} 
+.card-autor{
+    display: flex;
+    gap: 0.5;
+    align-items: center;
+
+}
+.card-autor > img{
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+.card-auto-name{
+    color: #6B7280;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+}
