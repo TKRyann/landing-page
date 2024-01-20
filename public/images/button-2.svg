@@ -1,0 +1,24 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="24" fill="#1E1E1E"/>
+<g id="Home" clip-path="url(#clip0_44_905)">
+<rect width="1440" height="1276" transform="translate(-234 -439)" fill="#F9FAFB"/>
+<g id="Hero Banner" clip-path="url(#clip1_44_905)">
+<rect width="1440" height="386" transform="translate(-234 -372)" fill="#F3F4F6"/>
+</g>
+<g id="Button">
+<rect x="-16" y="-16" width="56" height="56" rx="6" fill="#F59E0B"/>
+<g id="chevrons-down">
+<path id="Vector" d="M7 13L12 18L17 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M7 6L12 11L17 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_44_905">
+<rect width="1440" height="1276" fill="white" transform="translate(-234 -439)"/>
+</clipPath>
+<clipPath id="clip1_44_905">
+<rect width="1440" height="386" fill="white" transform="translate(-234 -372)"/>
+</clipPath>
+</defs>
+</svg>
