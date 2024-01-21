@@ -41,8 +41,9 @@ nav{
     gap: 5rem;
     font-family: Inter;
     color: #6B7280;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
+    
 }
 
 .menu > li  {
@@ -53,9 +54,13 @@ nav{
 a {
     color: #6B7280;
 }
-
+ a:hover{
+    color: #1F2937 ;
+    font-size: 1.3rem;
+    transition: 1s;
+ }
 .nosso-site {
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #4B5563;
 } 
@@ -227,23 +232,112 @@ hr{
 /* Seção do FeedBack */
 .secao-feedback {
     width: 1120px;
+    min-height: 100vh;
     padding: 1rem 2rem;
     margin: auto;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
+.feedback-card{
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 500px;
+    text-align: center;
+    
+  }
+.feedback-subtitulo{
+    color: #374151;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
+}
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 0.8rem;
+    color: #D97706;
+    font-family: Epilogue;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  input,
+  textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .feedback-button {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem;
+    background-color: #6B7280;
+    color: #ffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #374151;
+    transition: 0.5s;
+  }
 
 .feedback-titulo {
+    color: #374151;
+    font-family: Montserrat;
     font-size: 2rem;
+    font-weight: 700; 
+    display: flex;
+    flex-direction: row;
 }
 
-.usuario-feedback, .email-feedback, .text-feedback {
-    margin: 0.3rem;
+.feedback-p{
+    color:#6B7280;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.feedback-detalhes{
+    color:#be7c30;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
 /* Aqui fica o rodapé */
 .rodape {
+    padding: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: auto;
 }
+.rodape-p-1{
+    color: #9CA3AF;
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.rodape-destaque{
+    color: #9CA3AF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
