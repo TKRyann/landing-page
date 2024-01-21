@@ -118,48 +118,57 @@ hr{
     border-radius: 0.5rem;
 }
 
+/* Contém todos os cards */
 .card-container-1{
     max-width: 1120px;
     padding: 3rem 2rem;
     margin: auto;
     flex-direction: column;
     display: flex;
-
+    gap: 2rem;
 } 
+
+/* Cabeçalho do contúdo e todas as informções dele */
 .card-cabecalho{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 
 }
+
 .card-titulo{
     color: #374151;
     font-family: Montserrat;
     font-size: 2rem;
     font-weight: 700;
 }
+
 .card-subtitulo{
     color:#6B7280;
     font-family: Inter;
     font-size: 1rem;
     font-weight: 400;
 }
-.card-container-bloco{
-    padding: 0rem 10rem;
-    display: flex;
 
+/* Div responsável pelos cards */
+.card-container-bloco{
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
+
+/* Card individual e todas as informções dele */
 .card-container-2{
     border-radius: 0.5rem;
     background: #424040; 
     padding: 2rem;
     flex-direction: column;
     display: flex;
+    align-items: start;
     gap: 2rem;
-    flex-basis: 29rem;
-
+    max-width: 31.25rem;
+    max-height: 16rem;
 }
 .card-cabecalho-2{
     display: flex;
