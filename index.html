@@ -13,11 +13,12 @@
         <nav>
             <span class="logo">codegeek</span>
             <ul class="menu">
-                <li ><a href="###"></a>Home</li>
-                <li><a href="###"></a>Novidades</li>
-                <li><a href="###"></a>Comentar</li>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#secao-novidade">Novidades</a></li>
+                <li><a href="#secao-feedback">FeedBack</a></li>
             </ul>
-            <a class="Github" href="https://github.com/TKRyann/landing-page">Github</a>
+            <a class="nosso-site" href="https://tkryann.github.io/CodeGeek/">Visite</a>
         </nav>
     </header>
 
@@ -74,7 +75,7 @@
         </div>
 
         <!-- Seção que contém todo o contúdo dos cards -->
-        <section class="card-container-1">
+        <section class="card-container-1" id="secao-novidade">
 
             <!-- Cabeçalho da Seção -->
             <header class="card-cabacalho">
@@ -129,7 +130,7 @@
                         <span class="card-autor-nome">Kherlysson Ryann</span>
                     </div>
                 </div>
-                
+
                 <!-- Card -->
                 <div class="card-container-2">
                     <header class="card-cabecalho-2">
@@ -146,11 +147,22 @@
                 </div>
             </div>
         </section>
-        <section>
-
+        <section class="secao-feedback" id="secao-feedback">
+            <div class="container-feedback">
+                <form action="" class="feedback-card">
+                    <h1 class="feedback-titulo">De que forma podemos melhorar</h1>
+                    <div class="usuario-feedback">
+                        <input type="text" placeholder="Nome Completo">
+                    </div>
+                    <div class="email-feedback">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <textarea class="text-feedback" name="text-feedback" id="text-feedback" cols="15" rows="5" placeholder="Deixe sua opinião aqui..."></textarea>
+                </form>
+            </div>
         </section>
     </main>        
-    <footer>
+    <footer class="rodape">
         <p>Copyright &lt CODEGEEK /&gt 2023</p> 
         <p>Em desenvolvimento por Kherlysson Ryann & Daniel Aroucha</p>
     </footer>
