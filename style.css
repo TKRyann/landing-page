@@ -54,11 +54,11 @@ nav{
 a {
     color: #6B7280;
 }
- a:hover{
+a:hover{
     color: #1F2937 ;
     font-size: 1.3rem;
-    transition: 1s;
- }
+    transition: 0.5s;
+}
 .nosso-site {
     font-size: 1.3rem;
     font-weight: 600;
@@ -238,8 +238,14 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
 }
+
+.feedback-conteudo{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
 .feedback-card{
     margin-top: 1rem;
     background-color: #fff;
@@ -248,37 +254,45 @@ hr{
     border-radius: 0.5rem;
     width: 500px;
     text-align: center;
-    
-  }
+}
+
+.feedback-img {
+    display: flex;
+    justify-content: center;
+}
+.feedback-img > img{
+    max-width: 100%;
+}
+
 .feedback-subtitulo{
     color: #374151;
     font-family: Montserrat;
     font-size: 2rem;
     font-weight: 700;
 }
-  form {
+form {
     display: flex;
     flex-direction: column;
-  }
-  label {
+}
+label {
     margin-top: 0.8rem;
     color: #D97706;
     font-family: Epilogue;
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-  }
-  
-  input,
-  textarea {
+}
+
+input,
+textarea {
     padding: 0.5rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
+}
 
-  .feedback-button {
+.feedback-button {
     font-family: Inter;
     font-weight: 700;
     font-size: 1rem;
@@ -288,12 +302,12 @@ hr{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #374151;
     transition: 0.5s;
-  }
+}
 
 .feedback-titulo {
     color: #374151;
@@ -316,6 +330,47 @@ hr{
     font-weight: 700;
     font-size: 0.8rem;
     text-transform: uppercase;
+}
+
+/* Aqui fica o popup */
+
+.popup{
+    width: 400px;
+    background-color: #FFF;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #1F2937;
+    visibility: hidden;
+    transition: transform 0.4s, top 04.s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    background-color: #1F2937;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px #4B5563;
 }
 
 /* Aqui fica o rodapé */

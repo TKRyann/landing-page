@@ -149,39 +149,51 @@
         </section>
         <section class="secao-feedback" id="secao-feedback">
             <header>
-                 <h1 class="feedback-titulo">De que forma podemos melhora?</h1>
-                 <p class="feedback-p">Todos nós precisamos de pessoas que nos deem feedback. É assim que melhoramos</p>
-                 <span class="feedback-detalhes">Bill Gates</span>
+                <h1 class="feedback-titulo">De que forma podemos melhora?</h1>
+                <p class="feedback-p">Todos nós precisamos de pessoas que nos deem feedback. É assim que melhoramos</p>
+                <span class="feedback-detalhes">Bill Gates</span>
             </header>
-            <!-- <div class="feedback-img">
-                <img src="public/images/feedback-img.png" alt="feedback-image">
-            </div> Aqui é uma imagem que ira ficar ao lado do formulario pelo ao menos a ideia é essa 
-            -->
-            <div class="feedback-card">
-                <h2 class="feedback-subtitulo">FeedBack</h2>
-                <!--email que ira receber os feedbacks (code3geek@gmail.com) enviados-->
-                <form action="https://formsubmit.co/code3geek@gmail.com" method="POST">
-                  <!--caminho para pagina (send.html) agrecendo o envio do feedbeck-->
-                 <!-- <input type="hidden" name="_next" value="sucesso.html"/> -->
-                  <!--mensagem automatica, repondendo os feedbacks enviados-->
-                  <input type="hidden" name="_autoresponse" value="Suas palavras são um verdadeiro presente! Muito obrigado por compartilhar a sua experiência com a gente.">
-                  <!--modelo de templete do email-->
-                  <input type="hidden" name="_template" value="box">
-                  <!-- para evitar spams-->
-                  <input type="text" name="_honey" style="display:none">
-                  <!--desabilita o captcha, quando clica no botao de envio-->
-                  <input type="hidden" name="_captcha" value="false">
-                  <label for="nome">Nome:</label>
-                  <input type="text" id="nome" name="nome" required>           
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
-            
-                  <label for="mensagem">Mensagem:</label>
-                  <textarea id="mensagem" name="mensagem" required></textarea>
-            
-                  <button class="feedback-button" type="submit">Enviar</button>
-                </form>
-              </div>
+            <div class="feedback-conteudo">
+                <div class="feedback-card">
+                    <h2 class="feedback-subtitulo">FeedBack</h2>
+                    <!--email que ira receber os feedbacks (code3geek@gmail.com) enviados-->
+                    <form action="https://formsubmit.co/code3geek@gmail.com" method="POST">
+                        <!--caminho para pagina (send.html) agrecendo o envio do feedbeck-->
+                        <input type="hidden" name="_next" value="https://tkryann.github.io/landing-page/#secao-feedback"/>
+                        <!--mensagem automatica, repondendo os feedbacks enviados-->
+                        <input type="hidden" name="_autoresponse" value="Suas palavras são um verdadeiro presente! Muito obrigado por compartilhar a sua experiência com a gente.">
+                        <!--modelo de templete do email-->
+                        <input type="hidden" name="_template" value="box">
+                        <!-- para evitar spams-->
+                        <input type="text" name="_honey" style="display:none">
+                        <!--desabilita o captcha, quando clica no botao de envio-->
+                        <input type="hidden" name="_captcha" value="false">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required>
+                        </textarea>
+                
+                        <button class="feedback-button" onclick="openPopup()" type="submit">Enviar</button>
+
+                        <!-- Testendo PopUP -->
+                        <div class="popup" id="popup">
+                            <img src="public/images/enviado.png" alt="E-mail Enviado" class="icon-email">
+                            <h2>Sucesso!</h2>
+                            <p>Muito obrigado por compartilhar a sua experiência com a gente</p>
+                            <button onclick="closePopup()">OK</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="feedback-img">
+                    <img src="public/images/feedback-img.png" alt="feedback-image">
+                </div>
+                    <!-- Aqui é uma imagem que ira ficar ao lado do formulario pelo ao menos a ideia é essa  -->
+            </div>
         </section>
     </main>        
     <footer class="rodape">
